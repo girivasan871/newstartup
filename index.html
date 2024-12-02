@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Our startup</title>
+    <link rel="stylesheet" href="index.css" />
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.10/typed.js"
+      integrity="sha512-tQQXRDB2wEmuJGtFrmmoFYzNTq8StA1XJrfO0OQbbTxd9G0CwaTDL6/C1y805IlvBVrMwOqob1kf6r/2U5XXVg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <div class="logo">
+          <h1>OUR NEW START-UP</h1>
+        </div>
+        <div class="menus">
+          <ul>
+            <li><a href="#">HOME</a></li>
+            <li><a href="#">SERVICES</a></li>
+            <li><a href="#">DEMO PROJECT</a></li>
+            <li><a href="#">CONTACT</a></li>
+            <li><a href="#">ABOUT</a></li>
+          </ul>
+        </div>
+        <div class="login">
+          <a href="#">LOG IN</a>
+          <a href="#">SIGN UP</a>
+        </div>
+      </nav>
+    </header>
+
+    <section>
+      <div class="content">
+        <h1>WE ARE <br /><span id="head-1"></span></h1>
+      </div>
+    </section>
+
+    <script>
+      var typed = new Typed("#head-1", {
+        strings: [
+          "WEB DESIGNERS",
+          "3D MODELLING DESIGNERS",
+          "GRAPHIC DESIGNERS",
+          "AD PROMOTERS",
+        ],
+        typeSpeed: 130,
+        looped: true,
+        loopCount: 5,
+        cursorChar: "|",
+        showCursor: false,
+      });
+    </script>
+  </body>
+</html>
