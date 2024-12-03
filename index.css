@@ -74,6 +74,7 @@ header nav li a:hover {
     display: none;
   }
   header .login a {
+    display: none;
     text-decoration: none;
     background-color: black;
     font-size: 14px;
@@ -88,7 +89,7 @@ header nav li a:hover {
 section .content h1 {
   color: white;
   font-size: 36px;
-  margin-left: 120px;
+  text-align: center;
   margin-top: 150px;
 }
 section .content h1 span {
