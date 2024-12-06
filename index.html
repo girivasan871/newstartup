@@ -17,6 +17,13 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     ></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css"
+      integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
   </head>
   <body>
     <header>
@@ -24,7 +31,7 @@
         <div class="logo">
           <h1>OUR NEW START-UP</h1>
         </div>
-        <div class="menus">
+        <div class="menus" id="menulist">
           <ul>
             <li><a href="#">HOME</a></li>
             <li><a href="#">OUR PROJECT</a></li>
@@ -37,8 +44,23 @@
           <a href="#">LOG IN</a>
           <a href="#">SIGN UP</a>
         </div>
+        <div class="menubar" onclick="openmenu()">
+          <i class="fa-solid fa-bars" style="color: #ffffff"></i>
+        </div>
       </nav>
     </header>
+
+    <section>
+      <div class="menus-1" id="menulist-1">
+        <ul>
+          <li><a href="#">HOME</a></li>
+          <li><a href="#">OUR PROJECT</a></li>
+          <li><a href="#">SERVICES</a></li>
+          <li><a href="#">CONTACT</a></li>
+          <li><a href="#">ABOUT</a></li>
+        </ul>
+      </div>
+    </section>
 
     <section>
       <div class="content">
@@ -201,6 +223,16 @@
         cursorChar: "|",
         showCursor: false,
       });
+
+      var menubar = document.getElementById("menulist-1");
+
+      function openmenu() {
+        if (menubar.style.display === "none") {
+          menubar.style.display = "block";
+        } else {
+          menubar.style.display = "none";
+        }
+      }
     </script>
   </body>
 </html>

@@ -77,14 +77,19 @@ header nav li a:hover {
   color: black;
   font-weight: bold;
 }
-@media only screen and (max-width: 900px) {
+.menubar .fa-bars {
+  display: none;
+}
+@media only screen and (max-width: 1400px) {
   header nav h1 {
     font-size: 20px;
     font-weight: bold;
-    margin-left: 50px;
+    margin-left: 25px;
   }
-  header nav li {
+  header nav ul {
     display: none;
+    margin-top: 400px;
+    text-align: left;
   }
   header .login a {
     display: none;
@@ -95,8 +100,39 @@ header nav li a:hover {
     margin-right: 20px;
     font-weight: 100;
   }
+  .menubar .fa-bars {
+    display: block;
+    font-size: 32px;
+    padding: 20px;
+  }
   body {
     aspect-ratio: 9/16;
+  }
+}
+/* --------------- MENUS-1 CONTENT ------------------- */
+section .menus-1 {
+  display: none;
+  transition: 0.3s ease-in-out;
+}
+@media only screen and (max-width: 1400px) {
+  section .menus-1 {
+    display: none;
+    transition: 0.5s ease-in-out;
+  }
+  section .menus-1 ul {
+    background-color: rgba(0, 0, 0, 0.4);
+    text-align: center;
+    padding: 20px 0px;
+  }
+  section ul li {
+    padding: 20px;
+  }
+  section .menus-1 ul li a {
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: bold;
+    color: white;
+    padding: 20px;
   }
 }
 /* --------------- HEADER CONTENT ------------------- */
@@ -124,6 +160,7 @@ section .content h1 span {
     font-size: 24px;
     text-align: center;
     margin-top: 20px;
+    z-index: -1;
   }
   section .content h1 span {
     color: black;
