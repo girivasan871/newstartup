@@ -5,23 +5,13 @@
   font-family: "Poppins", sans-serif;
 }
 body {
-  background: url("./images/workbg.jpg");
+  width: 100%;
   background-size: auto;
-  background-repeat: no-repeat;
-  aspect-ratio: 16/9;
-}
-@media only screen and (max-width: 900px) {
-  body {
-    background: url("./images/workbg.jpg");
-    background-color: #000000;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-position: center center;
-    background-size: cover;
-  }
+  background-attachment: fixed;
+  aspect-ratio: 16 / 9;
+  background-position: initial;
 }
 /* --------------- HEADER SECTION ------------------- */
-
 header nav {
   display: flex;
   justify-content: space-between;
@@ -29,7 +19,7 @@ header nav {
   height: 100px;
   align-items: center;
   text-align: center;
-  background-color: rgba(0, 0, 0, 0.4);
+  background-color: rgb(255, 255, 255);
 }
 header nav h1 {
   font-size: 28px;
@@ -48,8 +38,8 @@ header nav li {
 }
 header nav li a {
   text-decoration: none;
-  color: rgb(255, 255, 255);
-  font-weight: 900;
+  color: rgb(0, 0, 0);
+  font-weight: 700;
   font-size: 16px;
   transition: 0.3s ease-in-out;
   /* text-shadow: 1px 1px 1px rgb(223, 223, 223); */
@@ -119,8 +109,8 @@ section .menus-1 {
     display: none;
   }
   section .menus-1 ul {
-    background-color: rgba(0, 0, 0, 0.4);
-    text-align: center;
+    background-color: #ff1808;
+    text-align: left;
     padding: 20px 0px;
     transition: 0.5s ease-in-out;
   }
@@ -129,7 +119,7 @@ section .menus-1 {
   }
   section .menus-1 ul li a {
     text-decoration: none;
-    font-size: 20px;
+    font-size: 16px;
     font-weight: bold;
     color: white;
     padding: 20px;
@@ -142,22 +132,47 @@ section .menus-1 {
   }
 }
 /* --------------- HEADER CONTENT ------------------- */
-
+.header-content {
+  height: auto;
+  background-size: cover;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  transition: 0.4s ease-in-out;
+  overflow: hidden;
+}
 section .content {
+  text-align: center;
+  padding: 50px 0px;
+}
+section .content .row {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+}
+section .content .row .col {
+  flex-basis: 50%;
+}
+section .content .row .col p {
+  font-size: 20px;
+  padding: 10px 20px;
+  font-weight: 600;
+}
+section .content .row .col img {
   width: 100%;
-  margin-top: 150px;
+  background-position: center center;
 }
 section .content h1 {
   color: rgb(255, 255, 255);
   font-size: 30px;
-  text-align: center;
-  margin-top: 20px;
+  padding-bottom: 20px;
 }
 #head {
   text-shadow: 2px 2px 5px black, 2px 2px 5px black;
 }
 section .content h1 span {
-  color: black;
+  color: rgb(255, 0, 0);
   font-size: 36px;
   padding: 20px;
   background-color: rgba(255, 255, 255, 0.6);
@@ -172,11 +187,22 @@ section .content h1 span {
     z-index: -1;
   }
   section .content h1 span {
-    color: black;
+    color: rgb(255, 0, 0);
     font-size: 24px;
     padding: 20px;
     background-color: rgba(255, 255, 255, 0.6);
     border-radius: 20px;
+  }
+  section .content .row {
+    display: block;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+  }
+  section .content .row .col p {
+    font-size: 18px;
+    padding: 10px 20px;
+    font-weight: 600;
   }
 }
 /* --------------- PROJECTS SECTION ------------------- */
@@ -184,11 +210,9 @@ section .projects {
   width: 100%;
   height: auto;
   text-align: center;
-  margin-top: 200px;
   background-color: rgb(255, 255, 255);
-  background: url("./images/set-office-supplies.jpg");
   aspect-ratio: 16/9;
-  color: rgb(250, 224, 175);
+  color: rgb(255, 0, 0);
   box-sizing: border-box;
   font-family: Verdana, sans-serif;
 }
@@ -277,25 +301,27 @@ section .services h1 {
   font-size: 36px;
   padding: 25px;
   text-align: center;
-  color: rgb(245, 222, 179);
-  background-color: black;
+  color: rgb(255, 0, 0);
+  background-color: rgb(255, 255, 255);
 }
 section .row-1 {
   display: flex;
   justify-content: center;
   align-items: center;
   text-align: center;
-  background-color: black;
-  color: white;
+  background-color: rgb(255, 255, 255);
+  color: rgb(3, 3, 3);
+  padding: 50px 0px;
 }
 
 section .row-1 .col {
   justify-content: center;
   align-items: center;
-  flex-basis: 25%;
+  flex-basis: 30%;
+  padding: 0px 10px;
 }
 section .row-1 .col img {
-  width: 300px;
+  width: 400px;
   aspect-ratio: 16 / 9;
 }
 section .row-1 .col h3 {
